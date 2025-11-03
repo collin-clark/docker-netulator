@@ -1,9 +1,10 @@
-FROM ubuntu:latest
+FROM alpine:latest
 EXPOSE 80
-RUN apt-get update
-RUN apt-get install -y python3 python3-dev python3-pip git nano
+RUN apk add python3 python3-dev py3-pip git
+ENV VIRTUAL_ENV=/opt/venv
+RUN python3 -m venv $VIRTUAL_ENV
+ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 RUN pip3 install netaddr Flask requests
 WORKDIR /app
 RUN git clone https://github.com/collin-clark/docker-netulator.git .
-ENTRYPOINT [“python3”]
-CMD [“ipcalc.py”]
+CMD [“python3”, “ipcalc.py”]
