@@ -7,4 +7,4 @@ ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 RUN pip3 install netaddr Flask requests
 WORKDIR /app
 RUN git clone https://github.com/collin-clark/docker-netulator.git .
-CMD . /opt/venv/bin/activate && exec python ipcalc.py
+CMD /opt/venv/bin/activate && exec python ipcalc.py
