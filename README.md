@@ -19,4 +19,6 @@ Enter a dotted decimal (198.51.0.157 255.255.225.224) or CIDR (198.51.0.157/27) 
 
 <img width="1160" height="833" alt="IPCalc_Child_Subnets" src="https://github.com/user-attachments/assets/e88e753e-8436-49cb-bf55-78c60f3fdf36" />
 
-The easiest way to get this up and running is to use Docker Desktop (pull packetpros/netcalc_v2). You could also run this in a Swarm or K8's. Please post an issues here on Github.
+The easiest way to get this up and running is to use Docker Desktop (pull packetpros/netcalc_v2). You could also run this in a Swarm or K8's. 
+
+Please post any issues here on Github.
