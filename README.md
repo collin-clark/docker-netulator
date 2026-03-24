@@ -1,3 +1,5 @@
+NOW ONLINE at https://ipcalc.packetpros.com/
+
 New and improved IP calculator that is now on Docker!
 
 Enter a dotted decimal (198.51.0.157 255.255.225.224) or CIDR (198.51.0.157/27) an receive lots of information about that subnet. 
